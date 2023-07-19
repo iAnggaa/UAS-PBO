@@ -13,13 +13,13 @@ class Pakaian {
 	}
 
 	public Pakaian() {
-		
+
 	}
-	
+	//setter
 	public void setNamaPakaian(String namaPakaian) {
 		this.namaPakaian = namaPakaian;
 	}
-	
+
 	public void setHarga(int harga) {
 		this.harga = harga;
 	}
