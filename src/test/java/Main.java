@@ -278,7 +278,7 @@ public class Main {
                 }
             }
 
-            System.out.print("Pesan lagi? (y/n) : ");
+            System.out.print("Ada setrikaan lain? (y/n) : ");
             while (!scan.hasNext("[yn]")) {
                 System.out.println("Input harus berupa y atau n!");
                 scan.next();
@@ -288,7 +288,7 @@ public class Main {
 
         } while (validasi.equals("y"));
 
-        diskon(totalHarga,totalJumlah);
+        hitung(totalHarga,totalJumlah);
     }
     public static void laundryPakaian() {
         System.out.println("Anda Memilih Pilihan Laundry");
@@ -323,7 +323,7 @@ public class Main {
 
                     while(!scan.hasNextInt()) {
                         System.out.println("\nInput harus berupa angka!");
-                        System.out.print("Masukkan Jumlah Pesanan : ");
+                        System.out.print("Masukkan Jumlah Pakaian : ");
                         scan.next();
                     }
 
@@ -340,7 +340,7 @@ public class Main {
                 }
             }
 
-            System.out.print("Pesan lagi? (y/n) : ");
+            System.out.print("Ada pakaian lain? (y/n) : ");
             while (!scan.hasNext("[yn]")) {
                 System.out.println("Input harus berupa y atau n!");
                 scan.next();
@@ -350,9 +350,9 @@ public class Main {
 
         } while (validasi.equals("y"));
 
-        diskon(totalHarga,totalJumlah);
+        hitung(totalHarga,totalJumlah);
     }
-    public static void diskon(int totalHarga, int totalJumlah) {
+    public static void hitung(int totalHarga, int totalJumlah) {
         int j = 10;
         int diskon = 2000;
         int hargaDiskon;
